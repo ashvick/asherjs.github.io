@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Home ASH</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<!-- Template Basic Images End -->
+
+	<meta name="theme-color" content="#000">
+
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">-->
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<div class='top-wrapper'>
+		<header>
+			<nav class='navbar'>
+				<a href='' class='navbar__logo'></a>
+				<ul class='navbar__links'>
+					<li class='navbar__link'>About</li>
+					<li class='navbar__link'>My works</li>
+					<li class='navbar__link' id='social-button'>Contacts</li>
+					<li class='navbar__social'>
+						<a href='https://vk.com/evil_mushroom' class='navbar__vk' target="_blank"></a>
+						<a href='' class='navbar__fb'></a>
+						<a href='https://github.com/asherjs' class='navbar__gh' target="_blank"></a>
+					</li>
+				</ul>
+			</nav>
+			<div class='languages'></div>
+		</header>
+		<section class='welcome'>
+			<h4 class='welcome__h4'>Hello! My name is Andrew. I'm a beginner front-end developer.</h4>
+			<h4 class='welcome__h4'>I have some skills in HTML5 + CSS + JS and React.<br>
+				In development I use tools such as gulp, webpack, npm, git.<br>
+				I like to learn new things and try to keep abreast of all trends.
+			</h4>
+		</section>
+	</div>
+	<section class='works'>
+		<div class='works__slider'>
+			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
+				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+			</a>
+			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
+				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+			</a>
+			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
+				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+			</a>
+			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
+				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+			</a>
+			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
+				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+			</a>
+		</div>
+		<ul class='works__arrows'>
+			<li class='works__arrow'></li>
+			<li class='works__arrow'></li>
+		</ul>
+	</section>
+	<footer class='footer'>
+		<div class='footer__copyright'>© Andrew Shcherbak</div>
+	</footer>
+
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+        var slider = tns({
+            container: '.works__slider',
+            items: 2,
+            slideBy: 1,
+            autoplay: false,
+			edgePadding: 5,
+			gutter: 20,
+			loop: false,
+            controlsContainer: '.works__arrows',
+			nav: false,
+            responsive: {
+                576: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+				992: {
+                    items: 4
+				}
+            }
+        });
+	</script>
+
+</body>
+</html>
