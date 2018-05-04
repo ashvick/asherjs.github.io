@@ -31,9 +31,13 @@
 			<nav class='navbar'>
 				<a href='' class='navbar__logo'></a>
 				<ul class='navbar__links'>
-					<li class='navbar__link'>About</li>
-					<li class='navbar__link'>My works</li>
-					<li class='navbar__link' id='social-button'>Contacts</li>
+					<li class='navbar__item'>
+						<a class='navbar__link' href='#about'>About</a>
+					</li>
+					<li class='navbar__item'>
+						<a class='navbar__link' href='#works'>My works</a>
+					</li>
+					<li class='navbar__item' id='social-button'>Contacts</li>
 					<li class='navbar__social'>
 						<a href='https://vk.com/evil_mushroom' class='navbar__vk' target="_blank"></a>
 						<a href='' class='navbar__fb'></a>
@@ -43,7 +47,7 @@
 			</nav>
 			<div class='languages'></div>
 		</header>
-		<section class='welcome'>
+		<section class='welcome' id='about'>
 			<h4 class='welcome__h4'>Hello! My name is Andrew. I'm a beginner front-end developer.</h4>
 			<h4 class='welcome__h4'>I have some skills in HTML5 + CSS + JS and React.<br>
 				In development I use tools such as gulp, webpack, npm, git.<br>
@@ -51,22 +55,19 @@
 			</h4>
 		</section>
 	</div>
-	<section class='works'>
+	<section class='works' id='works'>
 		<div class='works__slider'>
 			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
 				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
 			</a>
-			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
-				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+			<a href='#' class='works__example'>
+				<img class='works__image' src='./img/what-where.jpg' alt=''>
 			</a>
 			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
-				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+				<img class='works__image' src='' alt=''>
 			</a>
 			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
-				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
-			</a>
-			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
-				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
+				<img class='works__image' src='' alt=''>
 			</a>
 		</div>
 		<ul class='works__arrows'>
