@@ -1,8 +1,19 @@
-var menuElem = document.getElementById('social-button');
-var socialIcons = document.getElementsByClassName('navbar__social');
+"use strict";
 
-menuElem.onclick = function() {
-    socialIcons[0].classList.toggle('open');
-};
+import {startLife} from './libs/life.js';
 
-window.opener = null;
+document.addEventListener("DOMContentLoaded", function() {
+
+    let menuElem = document.getElementById('social-button');
+    let social = document.getElementsByClassName('navbar__social');
+
+    menuElem.onclick = function() {
+        social[0].classList.toggle('open');
+    };
+
+    startLife();
+
+    window.opener = null;
+
+});
+

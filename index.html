@@ -9,7 +9,6 @@
 	<title>Home ASH</title>
 	<meta name="description" content="">
 
-	<meta name="yandex-verification" content="e591034ce0478cab" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
@@ -21,7 +20,7 @@
 
 	<meta name="theme-color" content="#000">
 
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -41,7 +40,7 @@
 					<li class='navbar__item' id='social-button'>Contacts</li>
 					<li class='navbar__social'>
 						<a href='https://vk.com/evil_mushroom' class='navbar__vk' target="_blank"></a>
-						<a href='' class='navbar__fb'></a>
+						<a href='https://www.facebook.com/andrey.shcherbak.948' class='navbar__fb'></a>
 						<a href='https://github.com/asherjs' class='navbar__gh' target="_blank"></a>
 					</li>
 				</ul>
@@ -49,6 +48,7 @@
 			<div class='languages'></div>
 		</header>
 		<section class='welcome' id='about'>
+			<canvas id='life' class='welcome__life'></canvas>
 			<h4 class='welcome__h4'>Hello! My name is Andrew. I'm a beginner front-end developer.</h4>
 			<h4 class='welcome__h4'>I have some skills in HTML5 + CSS + JS and React.<br>
 				In development I use tools such as gulp, webpack, npm, git.<br>
@@ -57,56 +57,25 @@
 		</section>
 	</div>
 	<section class='works' id='works'>
-		<div class='works__slider'>
+		<div class='works__gallery'>
 			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
 				<img class='works__image' src='./img/ivashenko.jpg' alt=''>
 			</a>
 			<a href='#' class='works__example'>
 				<img class='works__image' src='./img/what-where.jpg' alt=''>
 			</a>
-			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
-				<img class='works__image' src='' alt=''>
-			</a>
-			<a href='https://asherjs.github.io/studio-hairstyles/' class='works__example'>
-				<img class='works__image' src='' alt=''>
-			</a>
 		</div>
-		<ul class='works__arrows'>
-			<li class='works__arrow'></li>
-			<li class='works__arrow'></li>
-		</ul>
 	</section>
 	<footer class='footer'>
+		<div class='footer__social'>
+			<a href='https://vk.com/evil_mushroom' class='footer__vk' target="_blank"></a>
+			<a href='https://www.facebook.com/andrey.shcherbak.948' class='footer__fb' target="_blank"></a>
+			<a href='https://github.com/asherjs' class='footer__gh' target="_blank"></a>
+		</div>
 		<div class='footer__copyright'>© Andrew Shcherbak</div>
 	</footer>
 
-	<script src="js/tiny-slider.js"></script>
 	<script src="js/scripts.min.js"></script>
-
-	<script>
-        var slider = tns({
-            container: '.works__slider',
-            items: 2,
-            slideBy: 1,
-            autoplay: false,
-			edgePadding: 5,
-			gutter: 20,
-			loop: false,
-            controlsContainer: '.works__arrows',
-			nav: false,
-            responsive: {
-                576: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-				992: {
-                    items: 4
-				}
-            }
-        });
-	</script>
 
 </body>
 </html>
